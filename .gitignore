@@ -1,3 +1,7 @@
 *.gem
 /.bundle/
 mongo-volume/
+mongodb16/
+poetrydb/
+poetrydb2/
+docker-compose.yml

@@ -1,37 +1,51 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    bson (4.10.0)
-    json (2.2.0)
-    kgio (2.11.2)
-    mongo (2.13.0)
-      bson (>= 4.8.2, < 5.0.0)
-    mustermann (1.0.3)
-    rack (2.2.2)
-    rack-protection (2.0.5)
-      rack
-    raindrops (0.19.0)
-    sinatra (2.0.5)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.5)
+    base64 (0.3.0)
+    bson (5.1.1)
+    json (2.13.2)
+    kgio (2.11.4)
+    logger (1.7.0)
+    mongo (2.21.2)
+      base64
+      bson (>= 4.14.1, < 6.0.0)
+    mustermann (3.0.4)
+      ruby2_keywords (~> 0.0.1)
+    rack (3.2.0)
+    rack-protection (4.1.1)
+      base64 (>= 0.1.0)
+      logger (>= 1.6.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.1.1)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0)
+    raindrops (0.20.1)
+    ruby2_keywords (0.0.5)
+    sinatra (4.1.1)
+      logger (>= 1.6.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.1.1)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    tilt (2.0.9)
-    unicorn (5.4.1)
+    tilt (2.6.1)
+    unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   json
-  mongo (= 2.13.0)
-  sinatra (= 2.0.5)
+  mongo
+  raindrops
+  sinatra
   unicorn
 
 RUBY VERSION
-   ruby 2.6.0p0
+   ruby 3.3.9p170
 
 BUNDLED WITH
-   1.17.2
+   2.5.22

@@ -1,6 +1,7 @@
 source "https://rubygems.org"
-ruby '2.6.0'
-gem 'sinatra', '2.0.5'
+ruby '3.3.9'
+gem 'sinatra'
 gem 'unicorn'
-gem 'mongo', '2.13.0'
+gem 'mongo'
 gem 'json'
+gem 'raindrops'
